@@ -1,5 +1,9 @@
 # USB Communication Protocol for UHF-U1-CU-71 RFID Reader
 
+## Disclaimer
+
+This document was developed through reverse engineering by analyzing USB communication between the UHF-U1-CU-71 RFID reader and the “UHF Reader Config V1.1.exe” application from the Fongwah Technology Co., Ltd. SDK, using Wireshark USB packet captures and insights from the *USB E7umf Library Function Manual*. While effort has been made to ensure accuracy, there is a possibility of errors or incomplete details due to the nature of reverse engineering. We welcome any feedback, corrections, or updates to refine and enhance the accuracy of this protocol description.
+
 ## Introduction
 
 This document details the USB communication protocol for the UHF-U1-CU-71 RFID reader from Fongwah Technology Co., Ltd. The protocol was reverse-engineered by analyzing the USB communication of the “UHF Reader Config V1.1.exe” application included in the manufacturer’s SDK, using Wireshark’s USB packet capture. The reader operates as a USB Human Interface Device (HID) with specific endpoints for sending commands and receiving responses, enabling operations such as reading/writing tags, controlling the reader, and securing tag memory.
